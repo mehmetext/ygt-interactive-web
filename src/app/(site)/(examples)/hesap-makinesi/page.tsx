@@ -1,5 +1,6 @@
 "use client";
 
+import Code from "@/components/Code";
 import { useState } from "react";
 
 export default function HesapMakinesiPage() {
@@ -8,7 +9,7 @@ export default function HesapMakinesiPage() {
   const [result, setResult] = useState(0);
 
   const onClickButton: React.MouseEventHandler<HTMLButtonElement> = (e) => {
-    setResult(number1 + number2);
+    //Bu kısma gerekli kodları yazmalısınız...
   };
 
   return (
@@ -39,11 +40,23 @@ export default function HesapMakinesiPage() {
             Sonuç: <b className="text-3xl">{result}</b>
           </div>
         </div>
-        <div className="flex-1 bg-gradient-to-br from-custom-orange to-custom-blue rounded-xl p-10 text-white flex flex-col gap-2">
+        <div className="flex-1 bg-gradient-to-br from-custom-orange to-custom-blue rounded-xl p-5 text-white flex flex-col gap-2 text-sm">
           <h2 className="font-bold text-3xl">Hesap Makinesi Örneği</h2>
           <p>
-            Kodlardan butonun fonksiyonunu güncelleyerek değişiklikleri
-            önizleyebilirsiniz...
+            Kodlardan <Code>onClickButton</Code> fonksiyonunu güncelleyerek
+            önizleyebilirsiniz.
+          </p>
+          <p>
+            <Code>number1</Code>: İlk sayı değişkeni
+          </p>
+          <p>
+            <Code>number2</Code>: İkinci sayı değişkeni
+          </p>
+          <p>
+            <Code>result</Code>: Sonuç değişkeni
+          </p>
+          <p>
+            <Code>setResult(...)</Code>: Sonuç güncelleme fonksiyonu
           </p>
         </div>
       </div>
