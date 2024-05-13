@@ -60,7 +60,8 @@ export default function HesapMakinesiPage() {
           </p>
           <ol className="list-decimal ml-4 flex flex-col gap-1">
             <li>
-              <Code>console.log(...)</Code> ile konsoldaki çıktıya bak.
+              <Code>console.log(number1 + number2)</Code> ile konsoldaki çıktıya
+              bak.
             </li>
             <li>
               <Code>setResult(20)</Code> ile deneme yap.
