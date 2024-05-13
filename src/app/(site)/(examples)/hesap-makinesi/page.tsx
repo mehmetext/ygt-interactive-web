@@ -40,7 +40,7 @@ export default function HesapMakinesiPage() {
             Sonuç: <b className="text-3xl">{result}</b>
           </div>
         </div>
-        <div className="flex-1 bg-gradient-to-br from-custom-orange to-custom-blue rounded-xl p-5 text-white flex flex-col gap-2 text-sm">
+        <div className="flex-1 bg-gradient-to-br from-custom-orange to-custom-blue rounded-xl p-5 text-white flex flex-col gap-4 text-sm">
           <h2 className="font-bold text-3xl">Hesap Makinesi Örneği</h2>
           <p>
             Kodlardan <Code>onClickButton</Code> fonksiyonunu güncelleyerek
@@ -57,6 +57,22 @@ export default function HesapMakinesiPage() {
           </p>
           <p>
             <Code>setResult(...)</Code>: Sonuç güncelleme fonksiyonu
+          </p>
+          <ol className="list-decimal ml-4 flex flex-col gap-1">
+            <li>
+              <Code>console.log(...)</Code> ile konsoldaki çıktıya bak.
+            </li>
+            <li>
+              <Code>setResult(20)</Code> ile deneme yap.
+            </li>
+            <li>
+              <Code>setResult(number1 + number2)</Code> ile işlemi gerçekleştir.
+            </li>
+          </ol>
+          <p>
+            <b>İpucu:</b> İsterseniz <Code>number1</Code> veya{" "}
+            <Code>number2</Code> değişkenlerinin başlangıç değerlerini de
+            güncelleyebilirsiniz!
           </p>
         </div>
       </div>
